@@ -1,20 +1,57 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/ranking.css">
+</head>
 <body>
+<button>Click me</button>
 
-<h1>My First JavaScript</h1>
+<div class="popup-wrapper">
+      
+<div class="popup">
+    <div class="popup-close">x</div>
+        <div class="popup-content">
+            <h2>NINJA SALE!!</h2>
+            <p>50% off all ninja clothing. don't miss out!</p>
+            <a href="#">view clothing</a>
+        </div>
+    </div>          
+</div>
+</div>
 
-<p>JavaScript can change the content of an HTML element:</p>
+<div class="container ">
+    <div class="columns">
+        <section class="ranking">
+            <h1>Ranking</h1>
+            <textarea id="rnk_id" class="ranking"></textarea>
+        </section>
+        <aside class="applicant">
+            <h1>Applicant</h1>
+            <textarea id="app_id" class="applicant"></textarea>
+        </aside>
+    </div>
+</div>
+<div class="btn">
+    <button id="parse_id" type="button" onclick="getPlayersByRank('rnk_id', 'app_id')">Rank Applicant</button>
+</div>
 
-<button type="button" onclick="myFunction()">Click Me!</button>
+<div class="popup-wrapper">
 
-<p id="demo">This is a demonstration.</p>
+<div class="popup">
+  <div class="popup-close">x</div>
+  <div class="popup-content">
+    <h2>NINJA SALE!!</h2>
+    <p>50% off all ninja clothing. don't miss out!</p>
+    <a href="#">view clothing</a>
+  </div>
+</div>
 
-<script>
-function myFunction() { 
-  document.getElementById("demo").innerHTML = "Hello JavaScript!";
-}
-</script>
+</div>
 
+<script src="js/parseRank.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
+
+
