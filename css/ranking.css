@@ -1,0 +1,117 @@
+body {
+  background-color: lightblue;
+}
+.container {
+  margin: 0 auto;
+}
+
+section, aside {
+  float : left;
+  width : 46%;
+  margin : 1%;
+  padding : 2px;
+        
+}
+.container:after{
+  display: block;
+  clear: both;
+  content: "";
+}
+/*
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+*/
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  height: 700px;
+ /*   margin : 2%;
+    padding: 2%; */
+}
+
+.btn {
+  display : block; 
+  width : 100%;
+  height : 20px;
+  margin:auto;
+  padding : 3px;
+  justify-content: center;
+}
+
+/*#parse_id {
+    display : block;
+    width : 100%;
+    height : 50px;
+    margin : auto 10px;
+    height : 20px;
+}*/
+
+button {
+  display: block;
+  margin: 20px auto;
+  background: crimson;
+  color: white;
+  border: 0;
+  padding: 6px 10px;
+}
+
+.popup-wrapper{
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.popup{
+  font-family: arial;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  position: relative;
+}
+
+.popup a{
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+}
+
+.popup-close{
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+}
+
+#players {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#players td, #players th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#players tr:nth-child(even){background-color: #f2f2f2;}
+
+#players tr:hover {background-color: #ddd;}
+
+#players th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
